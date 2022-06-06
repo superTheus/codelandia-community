@@ -1,0 +1,98 @@
+@for $i from 1 through 4 {
+    .project {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project__#{$i} {
+        min-width: 150px;
+        max-width: 620px;
+        width: calc(50% - 60px);
+        border: 1px solid $purple;
+        height: auto;
+        background-color: $black;
+        margin: 5px;
+        padding: 23px;
+
+        .project__#{$i}__img {
+            width: 100%;
+            height: 222px;
+            margin: auto;
+            background-color: $blackAlternative;
+        }
+
+        h4 {
+            color: $white;
+            font-family: $fontIBMPlex;
+            margin: 20px 0px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 31px;
+        }
+
+        p {
+            color: $paragraph;
+            font-family: $fontDmSans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 170%;
+        }
+
+        .project__#{$i}__buttons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+
+            width: 70%;
+
+            .btn_demo {
+                width: 165px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 11px 20px;
+                background-color: $green;
+                border-radius: 4px;
+
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            .btn_demo:hover {
+                cursor: pointer;
+            }
+
+            .btn_git {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 11px 20px;
+                width: 165px;
+                border: 1px solid $green;
+                box-sizing: border-box;
+                border-radius: 4px;
+                background: transparent;
+                color: $white;
+
+                font-family: $fontDmSans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            .btn_git:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
