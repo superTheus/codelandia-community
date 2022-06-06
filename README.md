@@ -7,4 +7,4 @@ Codelandia community challenge 22
 
 # About 
 
-  New Challenge about Codelandia Community, for improvement in CSS and HTML knowledge.
+  New Challenge about Codelandia Community, for improvement in SASS and HTML knowledge.
